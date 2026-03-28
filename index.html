@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій Сайт-Візитка</title>
+    <style>
+        /* Базові стилі */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Контейнер візитки */
+        .card {
+            background: #fff;
+            max-width: 400px;
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Шапка з фото */
+        .header {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            padding: 40px 20px;
+            color: white;
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            background: #fff;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: #6e8efb;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+        }
+
+        /* Контент */
+        .content {
+            padding: 30px 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        /* Кнопки/Посилання */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .link {
+            text-decoration: none;
+            color: #fff;
+            background: #333;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: opacity 0.3s;
+        }
+
+        .link:hover {
+            opacity: 0.8;
+        }
+
+        .link.tg {
+            background: #0088cc;
+        }
+
+        .link.insta {
+            background: #e1306c;
+        }
+
+        @media (max-width: 350px) {
+            .card {
+                border-radius: 0;
+            }
+
+            body {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="header">
+            <div class="profile-img">👋</div>
+            <h1>Твоє Ім'я</h1>
+            <span>Твоя професія або хобі</span>
+        </div>
+
+        <div class="content">
+            <p>Тут буде короткий опис про тебе. Наприклад: розробляю круті штуки або просто люблю каву та подорожі.</p>
+
+            <div class="links">
+                <a href="#" class="link tg">Telegram</a>
+                <a href="#" class="link insta">Instagram</a>
+                <a href="mailto:example@mail.com" class="link">Написати на Email</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
